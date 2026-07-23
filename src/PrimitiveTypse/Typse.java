@@ -101,7 +101,7 @@ public class Typse {
         System.out.println("*******************");
 
 
-        // ///
+        // /////
         int number = 123456;
 
 
