@@ -102,7 +102,21 @@ public class Typse {
 
 
         // /////
+
         int number = 123456;
+        int sum = 0;
+        int temp = number;
+
+        while (temp > 0) {
+            sum += temp % 10;
+            System.out.println("temp = " + temp + " sum = " + sum);
+            temp /= 10;
+        }
+
+        long numSt = 2;
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(numSt + " * " + i + " = " + numSt * i);
+        }
 
 
     }
