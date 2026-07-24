@@ -113,9 +113,47 @@ public class Typse {
             temp /= 10;
         }
 
+        System.out.println("*******************");
+
         long numSt = 2;
         for (int i = 1; i <= 10; i++) {
             System.out.println(numSt + " * " + i + " = " + numSt * i);
+        }
+
+        System.out.println("*******************");
+        long tmp = 1;
+
+        for (int i = 1; i <= 10; i++) {
+            tmp *= numSt;
+            System.out.println(numSt + " ^ " + i + " = " + tmp);
+        }
+
+        int numbers = 97;
+        boolean flag = false;
+
+        for (int j = 2; j < numbers ; j++) {
+            if(numbers % j == 0){
+                flag = true;
+                System.out.println("Число " + numbers + " не простое число и делиться на " + j);
+                break;
+            }
+        }
+        if(!flag){
+            System.out.println("Число " + numbers + " простое число");
+        }
+
+
+
+
+        long fact = 50;
+        long tmp1 = 1;
+
+        for (int i = 2; i <= fact; i++) {
+            tmp1 *= i;
+            if (tmp1 < 0) {
+                System.out.println("Переполнение long на " + i + " умножении.");
+                return;
+            }
         }
 
 
